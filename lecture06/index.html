@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../lib/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lecture 06</title>
+  </head>
+  <body ng-app="counterApp">
+    <h1>Counter</h1>
+    <div ng-controller="counterController">
+      <div>
+        Enter a name:
+        <input type="text" ng-model="name"
+        ng-keyup="performCalculation();"/>
+      </div>
+      <div>
+        Name Value: {{name}}
+      </div>
+      <div>
+        Numeric value of name: {{numericValue}}
+      </div>
+    </div>
+  </body>
+</html>
